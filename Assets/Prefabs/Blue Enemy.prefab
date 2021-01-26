@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 704178277281178676}
   - component: {fileID: 7517683868299875023}
   - component: {fileID: 2477266947342603690}
+  - component: {fileID: 1730513963351324195}
+  - component: {fileID: 522405914639293440}
   m_Layer: 0
   m_Name: Blue Enemy
   m_TagString: Untagged
@@ -96,3 +98,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfig: {fileID: 11400000, guid: 948bb8b03ac63394a875f489a9df2e1e, type: 2}
+--- !u!60 &1730513963351324195
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750085780916396891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.82, y: 0.84}
+    newSize: {x: 0.82, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.049999997, y: 0.42}
+      - {x: 0.049999997, y: 0.41}
+      - {x: 0, y: 0.42}
+      - {x: -0.24, y: 0.42}
+      - {x: -0.20142245, y: 0.41911042}
+      - {x: -0.40310088, y: 0.30239254}
+      - {x: -0.40770033, y: -0.1981593}
+      - {x: -0.13870855, y: -0.35788336}
+      - {x: -0.11148381, y: -0.41968274}
+      - {x: 0.112226725, y: -0.41986895}
+      - {x: 0.13891554, y: -0.35328212}
+      - {x: 0.40310088, y: -0.19779131}
+      - {x: 0.41, y: 0.31}
+      - {x: 0.18801096, y: 0.42690173}
+--- !u!114 &522405914639293440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750085780916396891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2d6e17c8a90c6143a78931cb9ece66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  projectile: {fileID: 3543112389718268265, guid: e1a744bae8d140647b7cd26a497580d3, type: 3}
+  projectileSpeed: 10
